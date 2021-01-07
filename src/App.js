@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./pages/home";
+import CourseDetail from "./pages/CourseDetail";
+import SignUp from "./pages/SignUp";
+import { connect } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//Import Route đường dẫn
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./pages/header";
+import SignIn from "./pages/SignIn";
+import { Component } from "react";
+import { actionCreator } from "./Redux/Actions";
+import { FETCH_USER } from "./Redux/Actions/type";
+
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path="/" exact={true} component={Home} />
+          <Route path="/detail/:IdCourse" component={CourseDetail} />
+          <Route path="/signup" component={SignUp} />
+          <Route path="/signin" component={SignIn} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
+
+  getInfoFromLocal = () => {
+    const getInfoParse = localStorage.getItem("Account");
+    if (getInfoParse) {
+      this.props.dispatch(actionCreator(FETCH_USER, JSON.parse(getInfoParse)));
+    }
+  };
+
+  componentDidMount() {
+    this.getInfoFromLocal();
+  }
 }
 
-export default App;
+export default connect()(App);
