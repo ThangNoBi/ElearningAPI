@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ElearningAPI/static/css/main.2483226d.chunk.css",
+    "main.js": "/ElearningAPI/static/js/main.ac0ca96a.chunk.js",
+    "main.js.map": "/ElearningAPI/static/js/main.ac0ca96a.chunk.js.map",
+    "runtime-main.js": "/ElearningAPI/static/js/runtime-main.0d8de82f.js",
+    "runtime-main.js.map": "/ElearningAPI/static/js/runtime-main.0d8de82f.js.map",
+    "static/js/2.7955bd6a.chunk.js": "/ElearningAPI/static/js/2.7955bd6a.chunk.js",
+    "static/js/2.7955bd6a.chunk.js.map": "/ElearningAPI/static/js/2.7955bd6a.chunk.js.map",
+    "static/js/3.25bf94eb.chunk.js": "/ElearningAPI/static/js/3.25bf94eb.chunk.js",
+    "static/js/3.25bf94eb.chunk.js.map": "/ElearningAPI/static/js/3.25bf94eb.chunk.js.map",
+    "index.html": "/ElearningAPI/index.html",
+    "static/css/main.2483226d.chunk.css.map": "/ElearningAPI/static/css/main.2483226d.chunk.css.map",
+    "static/js/2.7955bd6a.chunk.js.LICENSE.txt": "/ElearningAPI/static/js/2.7955bd6a.chunk.js.LICENSE.txt",
+    "static/media/logo.0137f102.png": "/ElearningAPI/static/media/logo.0137f102.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d8de82f.js",
+    "static/js/2.7955bd6a.chunk.js",
+    "static/css/main.2483226d.chunk.css",
+    "static/js/main.ac0ca96a.chunk.js"
+  ]
+}
